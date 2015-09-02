@@ -1,0 +1,35 @@
+
+== INSTALLATION GUIDE ==
+
+- Copy the entire file directory to web root.
+- Install database (see "Database Installation" below).
+- Change parameters in /conf/db_conf.php for database connection if you updated
+  relevant values when install database.
+- Update /conf/conf.php if want to change any default setting.
+- Visit the web directory, log in with default account: admin/password
+- Update admin's password.
+- For security, remove the /INSTALL folder, or move it outside web root.
+
+
+== Database Installation ==
+
+In console, change working directory to /INSTALL/.
+
+1) Create database schema.
+   - In makedb.sql, update the values for the database name, database user and password if desired.
+   - enter mysql: mysql -u root -p
+   - create database: source makedb.sql;
+
+   Alternatively, you can use phpMyAdmin or other web interface tools provided by hosting 
+   service to create the database.
+
+2) Load data:
+   - In mysql console, run (assuming the database name is default 'pibb_0001'):
+     use pibb_0001;
+     source load_data.sql;
+
+   You can also use phpMyAdmin for this purpose.
+
+
+9/23/2014
+X.C.
