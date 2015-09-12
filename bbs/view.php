@@ -23,7 +23,7 @@ $can_reply = 0;
 <td class="bbs_list_left"><br></td>
 <td class="bbs_list_mid">
 
-<form method="POST">
+<form method="POST" id="pibbs_form">
 <input type='hidden' id='deleteID' name='deleteID' value=''/>
 <input type="hidden" id="action" name="action" value='' />
 
@@ -294,7 +294,7 @@ function writeEditForm() {
 <tr><td>$T_author: </td><td>$_username</td></tr>
 <tr><td>$T_title: </td><td><input type="text" id="txt_title" name="txt_title" class="bbs_title" maxlength="256" value="$_title"> <br><font color='red'> <span id="e_title">$e_title</span></font></td></tr>
 <tr><td>$T_body: </td><td><textarea id="txt_body" name="txt_body" class="bbs_body" wrap="virtual">$_body</textarea> <br><font color='red'> <span id="e_body">$e_body</span></font></td></tr>
-<tr><td>$T_keywords: <img src="../image/question.gif" title="$T_keywords_title" style="vertical-align: top;"/></td><td><input type="text" id="txt_keywords" name="txt_keywords" class="bbs_keywords" maxlength="256" value="$_keywords"> <font color='red'> <span id="e_keywords">$e_keywords</span></font></td></tr>
+<tr><td>$T_keywords: <img src="../image/question.gif" title="$T_keywords_title" style="vertical-align: middle;"/></td><td><input type="text" id="txt_keywords" name="txt_keywords" class="bbs_keywords" maxlength="256" value="$_keywords"> <font color='red'> <span id="e_keywords">$e_keywords</span></font></td></tr>
 
 $attachment
 
@@ -400,7 +400,8 @@ EOF;
 
     $msg = "";
     try {
-        $result = mysql_query($query);
+        global $link;
+        $result = mysql_query($query, $link);
         if (! $result) {
             $msg = ($_DEBUG ? mysql_error() : "Database error");
         } else {
@@ -410,7 +411,6 @@ EOF;
                 writeViewForm($info, $i);
                 if ($info['ID'] == $thread_id) { $_title = $info['title']; }
             }
-
 
         }
     } catch (Exception $e) {

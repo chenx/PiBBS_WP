@@ -269,9 +269,9 @@ function getTitleBar($page_name) {
         $s = "$attrib<br/>$b";
     } else {
         $s = <<<EOF
-<table width="100%" border="0"><tr>
+<table width="100%" border="0" class="bbs_title_bar"><tr>
 <td width="30%">$send_group_imail $send_group_email</td>
-<td width="40%" align="center"><h3>$forum_title$attrib</h3></td>
+<td width="40%" align="center">$forum_title$attrib</td>
 <td width="30%" align="right">$b</td>
 </tr></table>
 EOF;
@@ -703,16 +703,16 @@ EOF;
 <td class="bbs_post_view_right">
 
 <table class="bbs_post_view_content">
-<tr class="bbs_post_view_content_head">
+<tr style="background-color: #eeeeff; height: 25px;">
 <td>
 $reply
 $modify
 $sameThread
 [<a href="forum.php?$url_params">$T_back_forum</a>]
 </td>
-<td align="right">$row &nbsp;</td></tr>
+<td align="right" style="text-align: right;">$row &nbsp;</td></tr>
 
-<tr><td colspan="2">
+<tr><td colspan="3">
 
 $T_author: <a href="user.php?u=$_username" class="bbs_user">$_username</a>, 
 $T_forum: $forum_title, $T_post_time: $_time $_TIMEZONE<br>

@@ -26,7 +26,8 @@ function validate(submit) {
     if (ok) {
         if (submit) $('#btnPreview').val('submit');
         //alert($('#btnPreview').val());
-        document.forms[0].submit();
+        //document.forms[0].submit();
+        document.getElementById('pibbs_form').submit();
     }
 }
 

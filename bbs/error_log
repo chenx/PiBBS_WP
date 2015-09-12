@@ -1,0 +1,1 @@
+[02-Sep-2015 22:01:44 America/Los_Angeles] PHP Fatal error:  Cannot redeclare showUserInfo() (previously declared in /home2/cssauhco/public_html/xc/wordpress/bbs/users/user.php:45) in /home2/cssauhco/public_html/xc/wordpress/bbs/theme/header.php on line 74

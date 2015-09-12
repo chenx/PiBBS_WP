@@ -44,7 +44,7 @@ print $cls_page->writeNavBar($T_page, $T_threads);
 ?>
 </td></tr></table>
 
-<form method="POST">
+<form method="POST" id="pibbs_form">
 <input type='hidden' id='deleteID' name='deleteID' value=''/>
 <input type="hidden" id="action" name="action" value='' />
 

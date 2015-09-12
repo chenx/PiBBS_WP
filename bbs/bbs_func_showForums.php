@@ -32,7 +32,7 @@ EOF;
     //print "<br>"; print_r($ret);
 
     $group = "";
-    $s = "<tr><td><br></td><td>&nbsp; $T_forum </td><td>$T_threads</td><td>$T_posts</td></tr>";
+    $s = "<tr><td><br></td><td>&nbsp; $T_forum </td><td class='td_center'>$T_threads</td><td class='td_center'>$T_posts</td></tr>";
     $i = 1;
     foreach ($ret as $key => $val) {
         if (! can_see_hidden_board($val['ID'], $val['hidden'])) { continue;  }
@@ -48,14 +48,14 @@ EOF;
         $managers = ($val['managers'] == '') ? "" : "$T_manager:" . writeManagers($val['managers']);
         
         $t .= <<<EOF
-<tr><td width='50'><img src='../image/folder_blue.png'></td>
+<tr><td width='50' class='td_center'><img src='../image/folder_blue.png'></td>
 <td align='left'>&nbsp;<a href='forum.php?f=$val[ID]'>$val[title]</a>$attrib
 <br/>&nbsp;<span style='font-size:11px; color:#666666;'>$val[description]
 <br/>&nbsp;$managers
 </span>
 </td>
-<td width='50'>$val[thread_count]</td>
-<td width='50'>$val[post_count]</td>
+<td width='50' class='td_center'>$val[thread_count]</td>
+<td width='50' class='td_center'>$val[post_count]</td>
 </tr>
 EOF;
         $s .= $t;

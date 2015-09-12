@@ -23,19 +23,18 @@ $custom_header = <<<EOF
 <link type="text/css" rel="stylesheet" href="../css/digest.css" />
 <!--[if IE]><script type="text/javascript" src="bbs_ie.js"></script><![endif]-->
 EOF;
+
 ?>
 
 <?php include("../theme/header.php"); ?>
 
-<center>
 
-<table class="bbs_box_index">
+<table class="bbs_box_index" border="0">
 <?php print $forum_top_row; ?>
 <tr>
 <td class="bbs_board_list_left"><br></td>
 
 <td align="center" class="bbs_board_list_mid"> 
-<!--<h3><?php echo $T_forumList; ?></h3>-->
 <?php showForums(); ?> </td>
 
 <td class="bbs_board_list_right"><br></td>

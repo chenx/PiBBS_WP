@@ -15,7 +15,7 @@ include("../theme/header.php");
 
 <table class="bbs_post_head"><tr><td><?php print $T_new_post; ?></td></tr></table>
 
-<form method="POST">
+<form method="POST" id="pibbs_form">
 
 <?php 
 $insert_tid = ""; // thread id of the new inserted entry.

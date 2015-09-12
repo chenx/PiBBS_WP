@@ -17,7 +17,7 @@ include("../theme/header.php");
 
 <table class="bbs_post_head"><tr><td><?php print $T_reply_post; ?></td></tr></table>
 
-<form method="POST">
+<form method="POST" id="pibbs_form">
 
 <?php if (! is_loggedIn()) { 
     writeLoginLink("../bbs/reply.php?$url_params&t=$thread_id&id=$id");

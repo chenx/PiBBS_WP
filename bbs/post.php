@@ -24,7 +24,7 @@ $can_reply = 0;
 <td class="bbs_list_left"><br></td>
 <td class="bbs_list_mid">
 
-<form method="POST">
+<form method="POST" id="pibbs_form">
 <input type='hidden' id='deleteID' name='deleteID' value=''/>
 <input type="hidden" id="action" name="action" value='' />
 

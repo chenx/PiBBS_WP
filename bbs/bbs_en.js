@@ -26,7 +26,8 @@ function validate(submit) {
     if (ok) {
         if (submit) $('#btnPreview').val('submit');
         //alert($('#btnPreview').val());
-        document.forms[0].submit();
+        //document.forms[0].submit();
+        document.getElementById('pibbs_form').submit();
     }
 }
 
@@ -68,5 +69,24 @@ function OnEnterSearch(e, url_params) {
         DoSearch(url_params);
     }
     return false;
+}
+
+
+//
+// Toggle help message for post.
+// Called in bbs_terms_cn/en.php.
+//
+function toggle_help() {
+    var m = document.getElementById("bbs_help_mode");
+    var h = document.getElementById('bbs_help');
+    if (h == null || m == null) return;
+    if (m.innerHTML == '+') {
+        h.style.display='block';
+        m.innerHTML = '-';
+    }
+    else {
+        h.style.display='none';
+        m.innerHTML = '+';
+    }
 }
 
