@@ -1,3 +1,8 @@
+/*
+ * Override "vertical-align: baseline;" in Albar style.css,
+ * so Title with "float: left;" can be vertically aligned to middle.
+ */
+td  { vertical-align: middle !important; }
 
 table {
     text-align: left; /* Opera use center-align by default. */

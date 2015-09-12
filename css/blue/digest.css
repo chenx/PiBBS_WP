@@ -1,3 +1,4 @@
+
 table.digest_forum {
     border: 0px solid black;
     width: 100%; /*790px;*/
@@ -5,6 +6,7 @@ table.digest_forum {
 }
 
 table.digest_forum td {
+    font-size: 12px;
     padding-left:  5px;
     padding-right: 5px;
     height: 25px;
@@ -29,9 +31,14 @@ table.digest_forum tr:hover {
 
 
 td.title {
-    float: left;
-    width: 99%; /*700px;*/
-    /*line-height: 25px;*/
+    float: left; 
+
+    width: 99%; 
+/*
+    line-height: 25px;
+    height: 25px;
+    display: inline-block;
+*/
     overflow: hidden;
 
     /*display: inline;*/
@@ -48,6 +55,16 @@ td.title {
    -moz-hyphens: auto;
     -ms-hyphens: auto;
         hyphens: auto;
+}
+
+td.title:after {
+    height: 100%;
+    content:' ';
+    font-size:0;
+    vertical-align:middle;
+    display:inline-block;
+    box-sizing: border-box;
+    background-color: red;
 }
 
 table.digest_forum td:nth-child(1) { width: 25px; }

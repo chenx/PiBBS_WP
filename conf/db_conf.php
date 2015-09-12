@@ -6,8 +6,8 @@
 //
 
 $host = 'localhost';
-$db = 'pibb_0001';
-$db_usr = 'pibb_0001';
-$db_pwd = 'Uxsfl29RkG53T';
+$db = 'cssauhco_pibbs_plugin';
+$db_usr = 'cssauhco_pibbs01';
+$db_pwd = '3B!m(83V1qNP';
 
 ?>

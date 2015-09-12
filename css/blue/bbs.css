@@ -1,3 +1,9 @@
+/*
+ * Override "vertical-align: baseline;" in Albar style.css,
+ * so Title with "float: left;" can be vertically aligned to middle.
+ */
+td  { vertical-align: middle !important; }
+table, td, body { font-size: 12px !important; }
 
 table {
     text-align: left; /* Opera use center-align by default. */
@@ -10,19 +16,39 @@ table.bbs_box_index {
     border: 0px solid black;
     padding: 0px;
     text-align: center;
-    border-spacing: 0px;
 }
 
+table.bbs_box_index td {
+    border: 0px solid green;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+td.td_center {
+    /*background-color: red;*/
+    vertical-align: middle;
+    text-align: center;
+}
+
+
 table.bbs_forum_list {
-    /*width: 700px;*/
     width: 100%;
     border: 0px solid black;
     padding: 0px;
     text-align: center;
+
+    border-spacing: 2px;
+    border-collapse: separate;
+
+    margin: auto;
 }
 
 table.bbs_forum_list td {
     border-bottom: 1px solid #eee;
+    line-height: 18px;
+    font-size: 12px;
+    color: black;
+    vertical-align: middle;
 }
 
 table.bbs_forum_list tr:nth-child(odd) {
@@ -36,6 +62,7 @@ table.bbs_forum_list tr:nth-child(even) {
 table.bbs_forum_list tr:nth-child(1) {
     background-color: #ccccff;
     padding: 5px;
+    height: 30px;
 }
 
 table.bbs_forum_list tr:hover {
@@ -66,6 +93,7 @@ td.bbs_board_list_left {
 
 td.bbs_board_list_mid {
     width: 100%;
+    /*border: 1px solid red;*/
 }
 
 td.bbs_board_list_right {
@@ -96,16 +124,16 @@ td.bbs_list_right {
 
 /* forum.php page */
 table.bbs_list_breadcrumb {
-    width: 100%; /*850px;*/
+    font-size: 12px;
+    width: 100%; 
     border: 0px solid black;
 }
 
 table.bbs_list_head {
+    font-size: 12px;
     width: 100%;
     border: 0px solid black;
     background-color: #eeffff;
-    padding-left: 3px;
-    padding-right: 3px;
 }
 
 table.bbs_list_head tr {
@@ -113,8 +141,16 @@ table.bbs_list_head tr {
 }
 
 table.bbs_list_head td {
+    padding-left: 3px;
+    padding-right: 3px;
     vertical-align: middle;
+    border: 0px solid blue;
 }
+table.bbs_list_head td:nth-child(3) {
+    vertical-align: middle;
+    text-align: right;
+}
+
 
 td.bbs_list_nav {
     text-align: right;
@@ -123,6 +159,8 @@ td.bbs_list_nav {
 table.bbs_list {
     width: 100%;
     border-spacing: 1px;
+    border-collapse: separate;
+    font-size: 12px;
 }
 
 /* for header: field names */
@@ -153,7 +191,7 @@ table.bbs_list tr:hover {
 table.bbs_list td:nth-child(1) { width: 10px; }
 table.bbs_list td:nth-child(2) { width: 10px; text-align: center; }
 /* 3rd column: title. Use float:left and overflow:hidden to hide part of title too long. */
-table.bbs_list td:nth-child(3) { width: 100%; /* 370px;*/ float: left; overflow: hidden; white-space: wrap; line-height: 25px; }
+table.bbs_list td:nth-child(3) { width: 100%; float: left; overflow: hidden; white-space: wrap; line-height: 25px; background-color: ; }
 table.bbs_list td:nth-child(4) { width: 70px; white-space: nowrap; text-align: right; } /* post date */
 table.bbs_list td:nth-child(5) { width: 60px; white-space: nowrap; } /* author */
 table.bbs_list td:nth-child(6) { width: 30px; white-space: nowrap; text-align: center; } /* click  */
@@ -172,6 +210,7 @@ table.bbs_list td:nth-child(15) { width: 10px;  white-space: nowrap; text-align:
 /* level 1 table */
 
 table.bbs_post_head {
+    font-size: 12px;
     width: 100%;
     border: 0px solid black;
     text-align: center;
@@ -182,12 +221,21 @@ table.bbs_post_head tr:nth-child(1) {
     height: 25px;
 }
 
+table.bbs_post_head td {
+    padding-left: 5px;
+    text-align: center;
+}
+
 /* level 2 table */
 
 table.bbs_post {
+    font-size: 12px;
     width: 100%;
     border: 0px solid black;
     text-align: left;
+
+    border-spacing: 2px;
+    border-collapse: separate;
 }
 
 table.bbs_post tr:nth-child(odd) {
@@ -215,12 +263,33 @@ table.bbs_post td {
     padding-left: 5px;
 }
 
+/* Title bar: board_name board | digest | mark */
+
+table.bbs_title_bar {
+    border: 0px solid;
+}
+
+table.bbs_title_bar td:nth-child(2) {
+    text-align: center;
+    font-size: 14px !important;
+    font-weight: bold;
+}
+table.bbs_title_bar td:nth-child(3) {
+    text-align: right;
+}
+
+
 /* view.php view */
 
 table.bbs_post_view {
+    font-size: 12px;
+
     width: 100%;
     border: 0px solid black;
     padding: 0px;
+
+    border-spacing: 5px;
+    border-collapse: separate;
 }
 
 td.bbs_post_view_left {
@@ -237,14 +306,19 @@ td.bbs_post_view_right {
 }
 
 table.bbs_post_view_content {
+    font-size: 12px;
+
     width: 100%;
-    border: 0px solid black;
+    border: 0px solid red;
     border-spacing: 0px;
-    padding-left: 2px;
-    padding-right: 2px;
+}
+table.bbs_post_view_content td {
+    border: 0px solid;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
-tr.bbs_post_view_content_head {
+td.bbs_post_view_content_head {
     background-color: #eeeeff;
     height: 25px;
 }
@@ -317,22 +391,30 @@ table.bbs_user td:nth-child(2) {
 /* message fields */
 
 input.bbs_title {
-    width: 99%; /* 800px; */
+    width: 99%; 
 }
 
 textarea.bbs_body {
-    width: 99%; /* 800px; */
+    width: 96%;
     height: 280px;
     resize: none;
 }
 
 input.bbs_keywords {
-    width: 99%; /*800px; */
+    width: 99%; 
 }
 
 
 /* Wrap word. http://kenneth.io/blog/2012/03/04/word-wrapping-hypernation-using-css/ */
 pre.bbs {
+    /* These 6 lines remove wordpress attributes for pre. */
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+    border: 0px solid blue;
+    background-color: white;
+    box-shadow: none;
+
     /*display: inline;*/
     white-space: pre-wrap;       /* Wrap text as needed. CSS 3. */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */

@@ -22,10 +22,22 @@ if ($homepage_news != "") $homepage_news = "<span class='homepage_note'>$homepag
 
 // desktop div can show only on desktop, i.e., non-mobile platforms.
 $forum_top_row = <<<EOF
-<tr><td style='text-align:left; padding-left: 5px;'>
+<tr><td style='text-align:left; padding-left: 5px; background: green;'>
 <div class="desktop"><a href="./"><img src="../image/blue_1000_150.gif" border="0"></a><br/><br/></div>
+<img src="../image/blue_1000_150.gif" border="0"><br/>
 <span class="homepage_time">$cur_time</span>$homepage_news
-<span style='display:block;'><a href="http://careerassist.org/">CareerAssist</a></span></td></tr>
+<span style='display:block;'><a href="http://careerassist.org/">CareerAssist</a></span>
+</td></tr>
+EOF;
+
+$forum_top_row = <<<EOF
+<tr><td style="background-image:url(../image/blue_1000_150.gif); background-repeat:no-repeat; height:150px;">
+<br/>
+</td></tr>
+<tr><td>
+<br/>
+<span class="homepage_time">$cur_time</span>$homepage_news
+</td></tr>
 EOF;
 
 //$theme = "plain";
@@ -41,7 +53,6 @@ function getThemeCss() {
     global $theme, $custom_header;
     $site_css = isMobile() ? "site_mobile.css" : "site.css";
     $style = <<<EOF
-<link type="text/css" rel="stylesheet" href="../css/menu.css" />
 <link type="text/css" rel="stylesheet" href="../css/$site_css" />
 EOF;
 

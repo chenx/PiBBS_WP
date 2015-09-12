@@ -19,7 +19,7 @@
 -- Table structure for table `BBS_BoardGroups`
 --
 
--- DROP TABLE IF EXISTS `BBS_BoardGroups`;
+DROP TABLE IF EXISTS `BBS_BoardGroups`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `BBS_BoardGroups` (
@@ -46,7 +46,7 @@ UNLOCK TABLES;
 -- Table structure for table `BBS_BoardList`
 --
 
--- DROP TABLE IF EXISTS `BBS_BoardList`;
+DROP TABLE IF EXISTS `BBS_BoardList`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `BBS_BoardList` (
@@ -84,7 +84,7 @@ UNLOCK TABLES;
 -- Table structure for table `BBS_BoardManager`
 --
 
--- DROP TABLE IF EXISTS `BBS_BoardManager`;
+DROP TABLE IF EXISTS `BBS_BoardManager`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `BBS_BoardManager` (
@@ -114,7 +114,7 @@ UNLOCK TABLES;
 -- Table structure for table `BBS_F_Admin`
 --
 
--- DROP TABLE IF EXISTS `BBS_F_Admin`;
+DROP TABLE IF EXISTS `BBS_F_Admin`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `BBS_F_Admin` (
@@ -164,7 +164,7 @@ UNLOCK TABLES;
 -- Table structure for table `BBS_F_CS`
 --
 
--- DROP TABLE IF EXISTS `BBS_F_CS`;
+DROP TABLE IF EXISTS `BBS_F_CS`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `BBS_F_CS` (
@@ -214,7 +214,7 @@ UNLOCK TABLES;
 -- Table structure for table `BBS_F_Fun`
 --
 
--- DROP TABLE IF EXISTS `BBS_F_Fun`;
+DROP TABLE IF EXISTS `BBS_F_Fun`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `BBS_F_Fun` (
@@ -264,7 +264,7 @@ UNLOCK TABLES;
 -- Table structure for table `BBS_F_News`
 --
 
--- DROP TABLE IF EXISTS `BBS_F_News`;
+DROP TABLE IF EXISTS `BBS_F_News`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `BBS_F_News` (
@@ -314,7 +314,7 @@ UNLOCK TABLES;
 -- Table structure for table `BBS_F_Programming`
 --
 
--- DROP TABLE IF EXISTS `BBS_F_Programming`;
+DROP TABLE IF EXISTS `BBS_F_Programming`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `BBS_F_Programming` (
@@ -364,7 +364,7 @@ UNLOCK TABLES;
 -- Table structure for table `BBS_Keywords`
 --
 
--- DROP TABLE IF EXISTS `BBS_Keywords`;
+DROP TABLE IF EXISTS `BBS_Keywords`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `BBS_Keywords` (
@@ -389,7 +389,7 @@ UNLOCK TABLES;
 -- Table structure for table `BBS_PrivateMembership`
 --
 
--- DROP TABLE IF EXISTS `BBS_PrivateMembership`;
+DROP TABLE IF EXISTS `BBS_PrivateMembership`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `BBS_PrivateMembership` (
@@ -414,7 +414,7 @@ UNLOCK TABLES;
 -- Table structure for table `IMail`
 --
 
--- DROP TABLE IF EXISTS `IMail`;
+DROP TABLE IF EXISTS `IMail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `IMail` (
@@ -447,7 +447,7 @@ UNLOCK TABLES;
 -- Table structure for table `IMailRecv`
 --
 
--- DROP TABLE IF EXISTS `IMailRecv`;
+DROP TABLE IF EXISTS `IMailRecv`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `IMailRecv` (
@@ -477,7 +477,7 @@ UNLOCK TABLES;
 -- Table structure for table `IMailRecvNotify`
 --
 
--- DROP TABLE IF EXISTS `IMailRecvNotify`;
+DROP TABLE IF EXISTS `IMailRecvNotify`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `IMailRecvNotify` (
@@ -501,7 +501,7 @@ UNLOCK TABLES;
 -- Table structure for table `IMailState`
 --
 
--- DROP TABLE IF EXISTS `IMailState`;
+DROP TABLE IF EXISTS `IMailState`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `IMailState` (
@@ -525,7 +525,7 @@ UNLOCK TABLES;
 -- Table structure for table `Schema_TblCol`
 --
 
--- DROP TABLE IF EXISTS `Schema_TblCol`;
+DROP TABLE IF EXISTS `Schema_TblCol`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Schema_TblCol` (
@@ -556,7 +556,7 @@ UNLOCK TABLES;
 -- Table structure for table `User`
 --
 
--- DROP TABLE IF EXISTS `User`;
+DROP TABLE IF EXISTS `User`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `User` (
@@ -603,7 +603,7 @@ UNLOCK TABLES;
 -- Table structure for table `UserGroup`
 --
 
--- DROP TABLE IF EXISTS `UserGroup`;
+DROP TABLE IF EXISTS `UserGroup`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `UserGroup` (
@@ -627,7 +627,7 @@ UNLOCK TABLES;
 -- Table structure for table `User_LinkedIn`
 --
 
--- DROP TABLE IF EXISTS `User_LinkedIn`;
+DROP TABLE IF EXISTS `User_LinkedIn`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `User_LinkedIn` (
@@ -653,7 +653,7 @@ UNLOCK TABLES;
 -- Table structure for table `code_register`
 --
 
--- DROP TABLE IF EXISTS `code_register`;
+DROP TABLE IF EXISTS `code_register`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `code_register` (
@@ -681,7 +681,7 @@ UNLOCK TABLES;
 -- Table structure for table `log_site`
 --
 
--- DROP TABLE IF EXISTS `log_site`;
+DROP TABLE IF EXISTS `log_site`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `log_site` (
@@ -708,7 +708,7 @@ UNLOCK TABLES;
 -- Temporary table structure for view `v_log_site`
 --
 
--- DROP TABLE IF EXISTS `v_log_site`;
+DROP TABLE IF EXISTS `v_log_site`;
 /*!50001 DROP VIEW IF EXISTS `v_log_site`*/;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
@@ -738,7 +738,7 @@ SET character_set_client = @saved_cs_client;
 /*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
 /*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
-/*!50001 VIEW `v_log_site` AS select `L`.`ID` AS `ID`,`L`.`user_id` AS `user_id`,`L`.`action` AS `action`,`L`.`ip` AS `ip`,`L`.`note` AS `note`,`L`.`timestamp` AS `timestamp`,`U`.`login` AS `login`,concat(concat(`U`.`first_name`,' '),`U`.`last_name`) AS `Name` from (`log_site` `L` join `user` `U`) where (`L`.`user_id` = `U`.`ID`) */;
+/*!50001 VIEW `v_log_site` AS select `L`.`ID` AS `ID`,`L`.`user_id` AS `user_id`,`L`.`action` AS `action`,`L`.`ip` AS `ip`,`L`.`note` AS `note`,`L`.`timestamp` AS `timestamp`,`U`.`login` AS `login`,concat(concat(`U`.`first_name`,' '),`U`.`last_name`) AS `Name` from (`log_site` `L` join `User` `U`) where (`L`.`user_id` = `U`.`ID`) */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
 /*!50001 SET collation_connection      = @saved_col_connection */;

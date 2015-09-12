@@ -21,7 +21,7 @@ $_DB_BAK_PATH = "../conf/db_bak";
 // Note: if you use captcha, you may want to set a 
 // good length for captcha according to language.
 $_LANG = "cn"; 
-//$$_LANG = "en";
+$_LANG = "en";
 
 
 ///////////////////////////////////////////

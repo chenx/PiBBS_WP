@@ -1,0 +1,13 @@
+
+9/2/2015
+
+- make homepage css good.
+- make /bbs/users/user.php good.
+  - showUserInfo() is conflict with a function with the same name in PiBBS.
+  - rename it to wp_showUserInfo().
+- now can post
+
+
+9/1/2015
+
+Started.
