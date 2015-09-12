@@ -5,6 +5,12 @@
 td  { vertical-align: middle !important; }
 table, td, body { font-size: 12px !important; }
 
+table a {
+    color: blue !important;
+    text-decoration: underline !important;
+}
+
+
 table {
     text-align: left; /* Opera use center-align by default. */
 }
