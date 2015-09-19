@@ -3,8 +3,8 @@ header("Expires: 0");
 header("Cache-Control: no-store, no-cache, must-revalidate");
 header("Cache-Control: post-check=0, pre-check=0", false);
 header("Pragma: no-cache");
-require_once("../theme/themes.php");
 require_once("../plugin/wp_login.php");
+require_once("../theme/themes.php");
 
 $wp_custom_header = '<script type="text/javascript" src="../js/ajax/libs/jquery/1.4/jquery.min.js"></script>' 
   . getThemeCss();
@@ -49,10 +49,9 @@ if (isset($div_main_id) && $div_main_id != "") {
 
 
 <?php
+/*
 if (is_user_logged_in()){
     wp_hello();
-    //echo "<p>Welcome, registered user!</p>";
-    //echo "<blockquote><p>Welcome, registered user!</p></blockquote>";
     //wp_showUserInfo();
 }
 else {
@@ -60,6 +59,7 @@ else {
     echo "<a href='" . wp_login_url( "bbs" ) . "'><span style='color: red;'>Login</span></a> | ";
     echo "<a href='../../wp-login.php?action=register'><span style='color: red;'>Register</span></a></p>";
 }
+*/
 
 // showUserInfo() is conflict with PiBBS function.
 function wp_showUserInfo() { 

@@ -17,7 +17,7 @@ $PAGE_KEYWORDS = "CareerAssist, Forum";
 $PAGE_TITLE = "CareerAssist Forum";
 
 $homepage_news = "<font color='red'>News: <a href='../imail/' style='color:blue;'>Mailbox</a> is online</font>";
-$homepage_news = ""; // later will get news from database.
+$homepage_news = wp_user(); // later will get news from database.
 if ($homepage_news != "") $homepage_news = "<span class='homepage_note'>$homepage_news</span>";
 
 // desktop div can show only on desktop, i.e., non-mobile platforms.
@@ -66,5 +66,23 @@ function getCurrentTime() {
     //return date("F j, Y, g:i a");
     return "$T_currentTime: " . date("D M j G:i:s T Y"); 
 }
+
+function wp_user() {
+    global $current_user;
+    if ( isset($current_user) && $current_user->ID !== 0 ) {
+        //var_dump($current_user);
+        $user = "Welcome, " . $current_user->user_login . "!";
+    }
+    else {
+        $redirect_url = wp_login_url( "bbs" );
+        $user = <<<EOF
+Welcome, visitor! &nbsp; 
+<a href='$redirect_url'><span style='color: red;'>Login</span></a> | 
+<a href='../../wp-login.php?action=register'><span style='color: red;'>Register</span></a>
+EOF;
+    }
+    return $user;
+}
+
 
 ?>
