@@ -217,6 +217,9 @@
 <li>Allow customizable settings, in /conf/conf.php. </li>
 <li>Allow English or Chinese version. Easy to extend to other languages. </li>
 </ul>
+
+This version of PiBBS is specifically customized for WordPress.
+
 <hr>
 <h2>
 <a name="History">History</a>
