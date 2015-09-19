@@ -348,7 +348,7 @@ function write_breadcrumb() {
     $k = db_htmlEncode( U_REQUEST('k') ); // search value.
     $searchBar = <<<EOF
 <input type="search" results id="searchTxt" value="$k" onkeyup="javascript: OnEnterSearch(event, '$url_params');" 
-       placeholder="$T_search_placeholder" title="$T_search_title" class="searchBox">
+       placeholder="$T_search_placeholder" title="$T_search_title" class="searchBox bbs_input_default">
 EOF;
 //<img src="../image/search.png" border="0" style="height:20px; vertical-align:top;" 
 //     onclick="javascript: DoSearch('$url_params');" title="$T_search_title">

@@ -112,7 +112,7 @@ function get_form_attachment_row($param) {
     global $T_attachment;
     $attachment = <<<EOF
 <tr>
-<td style="vertical-align: top; line-height: 22px;">$T_attachment: 
+<td style="vertical-align: top !important; line-height: 22px;">$T_attachment: 
 <img src="../image/question.gif" title="$_UPLOAD_CONSTRAINTS" style="vertical-align:middle;"> 
 </td>
 <td>

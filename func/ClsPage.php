@@ -93,7 +93,7 @@ class ClsPage {
         }
 
         $s = <<<EOF
- <input type='text' id='gotoPage' name='gotoPage' value='' style='width:20px;' maxlength='10' title='$txt_title'>
+ <input type='text' id='gotoPage' name='gotoPage' value='' style='width:20px;' maxlength='10' title='$txt_title' class='bbs_input_default'>
 <input type='button' name='btnGoto' value='$btn_value' onclick="javascript: jumpToTopic($this->pageCount, '$this->param_page');" title='$btn_title'>
 EOF;
         return $s;

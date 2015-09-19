@@ -221,7 +221,8 @@ $attachment
 function doDelete() {
     var o = confirm("$T_remove_prompt");
     if (o) {
-        document.forms[0].submit();
+        //document.forms[0].submit();
+        document.getElementById('pibbs_form').submit();
     }
 }
 </script>

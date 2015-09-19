@@ -5,6 +5,37 @@
 td  { vertical-align: middle !important; }
 table, td, body { font-size: 12px !important; }
 
+/* override style of:
+ * input[type="text"], select, input[type="email"], 
+ * input[type="password"], input[type="search"],
+ * input[type="number"], input[type="date"], textarea
+ */
+
+input[type="text"], textarea,
+.bbs_input_default
+{
+    padding: 2px !important;
+    background: white !important;
+
+    border-right: 1px solid #dddddd !important;
+    border-bottom: 1px solid #dddddd !important;
+    border-top: 1px solid #666666 !important;
+    border-left: 1px solid #666666 !important;
+
+    //background-color: white !important; 
+    //border: 0px none;
+    //border-radius: 0px !important; 
+    //box-shadow: none !important; 
+    //color: white !important;
+    //padding: 0px !important; 
+    //width: 96%;
+    //outline: medium none !important;
+}
+
+table {
+    margin: 0px !important; /* avoid space between tables. */
+}
+
 table a {
     color: blue !important;
     text-decoration: underline !important;
@@ -273,6 +304,8 @@ table.bbs_post td {
 
 table.bbs_title_bar {
     border: 0px solid;
+    margin-top:    15px !important;
+    margin-bottom: 15px !important;
 }
 
 table.bbs_title_bar td:nth-child(2) {
@@ -299,7 +332,7 @@ table.bbs_post_view {
 }
 
 td.bbs_post_view_left {
-    vertical-align: top;
+    vertical-align: top !important;
     text-align: center;
     width: 100px;
     background-color: #eeeeff;
@@ -397,17 +430,17 @@ table.bbs_user td:nth-child(2) {
 /* message fields */
 
 input.bbs_title {
-    width: 99%; 
+    width: 99% !important; 
 }
 
 textarea.bbs_body {
-    width: 96%;
+    width: 99% !important;
     height: 280px;
     resize: none;
 }
 
 input.bbs_keywords {
-    width: 99%; 
+    width: 99% !important; 
 }
 
 
@@ -451,6 +484,8 @@ pre.bbs {
 
 div.bbs_buttons {
     text-align: center;
+    margin-top:    15px !important;
+    margin-bottom: 15px !important;
 }
 
 div.code {

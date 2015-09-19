@@ -74,12 +74,12 @@ table.digest_forum td:nth-child(5) { width: 30px; white-space: nowrap; text-alig
 table.digest_forum td:nth-child(6) { width: 60px; white-space: nowrap; } /* forum */
 
 a.bbs_user {
-    text-decoration: none;
-    color: #009900;
+    text-decoration: none !important;
+    color: #009900 !important;
 }
 
 a.bbs_user:hover {
-    color: blue;
+    color: blue !important;
 }
 
 img.iconFile {

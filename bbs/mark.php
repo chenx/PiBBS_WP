@@ -20,6 +20,7 @@ db_open();
 <table class="bbs_list_head">
 <tr>
 <td align="left"><?php print $T_mark_area; ?></td>
+<td><br/></td>
 <td align="right">
 <?php 
 $PAGE_SIZE = 50;

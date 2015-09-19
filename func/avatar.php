@@ -40,8 +40,9 @@ function get_avatar_by_email($email, $img = false) {
 
 function default_avatar() {
     global $_DEFAULT_AVATAR;
-    $default_avatar = "<img src=\"$_DEFAULT_AVATAR\" border=\"0\"/>";
-    return $default_avatar;
+    //$default_avatar = "<img src=\"$_DEFAULT_AVATAR\" border=\"0\"/>";
+    //return $default_avatar;
+    return $_DEFAULT_AVATAR;
 }
 
 /**

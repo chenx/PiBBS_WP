@@ -17,19 +17,19 @@
     /* menu setting */
 
     a.bbs_user {
-        text-decoration: none;
-        color: #009900;
+        text-decoration: none !important;
+        color: #009900 !important;
     }
     a.bbs_user:hover {
-        color: blue;
+        color: blue !important;
     }
 
     a.forum {
-        text-decoration: none;
-        color: #000000;
+        text-decoration: none !important;
+        color: #000000 !important;
     }
     a.forum:hover {
-        color: blue;
+        color: blue !important;
     }
 
 
